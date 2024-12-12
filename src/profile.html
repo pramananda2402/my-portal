@@ -1,6 +1,65 @@
 ---
-layout: layouts/base.html
+layout: layouts/profile.html
 title: InMoDe Portal
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ipsam impedit vel dolorum at dolor, illum possimus voluptas asperiores, vero sit repellat quod. Quod illum deserunt provident quam minima pariatur?
+<div class="container">
+    <header class="header">
+        <h1>Welcome to InMoDe Portal</h1>
+    </header>
+
+    <section class="section platforms">
+        <h2>Platforms</h2>
+        <ul class="platform-list">
+            {% for platform in platforms %}
+                <li class="platform-item">
+                    <a href="{{platform.link}}" target="_blank" rel="noopener noreferrer">{{platform.name}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="section socials">
+        <h2>Social Media</h2>
+        <ul class="social-list">
+            {% for social in socials %}
+                <li class="social-item">
+                    <span>{{social.name}}: </span>
+                    <a href="{{social.link}}" target="_blank" rel="noopener noreferrer">{{social.username}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="section study-fields">
+        <h2>Fields of Study</h2>
+        <ul class="study-field-list">
+            {% for studyField in studyFields %}
+                <li class="study-field-item">{{studyField.name}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="section projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            {% for project in projects %}
+                <div class="project-item">
+                    <h3>{{project.name}}</h3>
+                    <p>{{project.description}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="section papers">
+        <h2>Research Papers</h2>
+        <ul class="paper-list">
+            {% for paper in papers %}
+                <li class="paper-item">
+                    <h3>{{paper.name}}</h3>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>

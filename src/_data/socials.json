@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Email",
+        "username": "incmordev6794@gmail.com",
+        "link": "mailto:incmordev6794@gmail.com"
+    },
+    {
+        "name": "Github",
+        "username": "InMoDe-Portal",
+        "link": "https://github.com/InMoDe-Portal"
+    },
+    {
+        "name": "Linkedin",
+        "username": "InMoDe-Portal",
+        "link": "https://www.linkedin.com/company/InMoDe-Portal/"
+    },
+    {
+        "name": "X",
+        "username": "InMoDe-Portal",
+        "link": "https://twitter.com/InMoDePortal"
+    },
+    {
+        "name": "telegram",
+        "username": "InMoDe-Portal",
+        "link": "https://t.me/InMoDePortal"
+    },
+    {
+        "name": "facebook",
+        "username": "InMoDe-Portal",
+        "link": "https://www.facebook.com/InMoDePortal"
+    }
+
+]
