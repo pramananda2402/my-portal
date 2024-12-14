@@ -1,0 +1,29 @@
+---
+layout: layouts/projects.html
+title: "Projects"
+---
+
+<h1>Projects</h1>
+
+<ul class="project-list">
+  {% for project in collections.projects %}
+  <li class="project-card">
+    <div class="project-content">
+      <div class="project-header">
+        <a href="{{ project.url }}" class="project-link">
+          <h2>{{ project.data.title }}</h2>
+          
+        </a>
+        <p>{{ project.data.description }}</p>
+      </div>
+      <div class="project-footer">
+        <div>Completion date: {{ project.data.completion }}</div>
+        <div>
+          GitHub link: 
+          <a href="{{ project.data.github }}" target="_blank">{{ project.data.github }}</a>
+        </div>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

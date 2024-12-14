@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/project.css">
+</head>
+<body>
+    <!-- {% include "navbar.html" %} -->
+    {% block content %}
+        {{ content | safe }}
+    {% endblock %}
+    
+</body>
+</html>
