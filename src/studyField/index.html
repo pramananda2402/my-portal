@@ -1,0 +1,22 @@
+---
+layout: layouts/studyFields.html
+title: "Study Fields"
+---
+
+<h1>Study Fields</h1>
+
+
+
+<ul class="study-field-list">
+    {% for studyField in collections.studyFields %}
+    <li class="study-field-item">
+
+        <a href="{{ studyField.url }}" class="study-field-link">
+            <h2>{{ studyField.data.title }}</h2>
+            <p>{{ studyField.data.description }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+

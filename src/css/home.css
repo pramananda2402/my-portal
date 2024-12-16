@@ -7,6 +7,7 @@ body {
 }
 
 .profile-container {
+    
     padding: 20px;
     max-width: 800px;
     margin: auto;
@@ -19,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .profile-image img {
@@ -50,13 +52,11 @@ body {
     text-decoration: underline;
 }
 
-.achievements h2,
-.projects h2 {
+.achievements h3,
+.projects h3 {
     font-size: 20px;
     color: #007BFF;
-    border-bottom: 2px solid #007BFF;
     display: inline-block;
-    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 

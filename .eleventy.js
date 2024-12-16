@@ -9,6 +9,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("projects", function(collectionApi) {
         return collectionApi.getFilteredByGlob("src/project/**/*.md");
     })
+    eleventyConfig.addCollection("studyFields", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/studyField/**/*.md");
+    })
 
     eleventyConfig.addWatchTarget("src/css/");
     return {
