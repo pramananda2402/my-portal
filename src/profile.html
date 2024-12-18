@@ -4,9 +4,87 @@ title: InMoDe Portal
 ---
 
 <div class="container">
-    <header class="header">
-        <h1>Welcome to InMoDe Portal</h1>
-    </header>
+
+    <section class="section study-fields">
+        <h2>Fields of Study</h2>
+        <ul class="study-field-list">
+            <!-- Main Languages -->
+            <li class="study-field-item">
+                <h3>Main Languages</h3>
+                <ul>
+                    {% for lang in skills.main_language %}
+                        <li>{{ lang.name }} - {{ lang.level }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+
+            <!-- Other Languages -->
+            <li class="study-field-item">
+                <h3>Other Languages</h3>
+                <ul>
+                    {% for lang in skills.other_languages %}
+                        <li>{{ lang }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+
+            <!-- Frameworks -->
+            <li class="study-field-item">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>
+                        <h4>Web Frameworks</h4>
+                        <ul>
+                            {% for framework in skills.frameworks.web_frameworks %}
+                                <li>{{ framework.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>ML/DL Frameworks</h4>
+                        <ul>
+                            {% for framework in skills.frameworks.ML_DL_frameworks %}
+                                <li>{{ framework.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Libraries -->
+            <li class="study-field-item">
+                <h3>Libraries</h3>
+                <ul>
+                    <li>
+                        <h4>Web Libraries</h4>
+                        <ul>
+                            {% for library in skills.Libraries.web_libraries %}
+                                <li>{{ library.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>ML/DL Libraries</h4>
+                        <ul>
+                            {% for library in skills.Libraries.ML_DL_libraries %}
+                                <li>{{ library.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Other Skills -->
+            <li class="study-field-item">
+                <h3>Other Skills</h3>
+                <ul>
+                    {% for skill in skills.other %}
+                        <li><strong>{{ skill.name }}:</strong> {{ skill.des }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </section>
 
     <section class="section platforms">
         <h2>Platforms</h2>
@@ -20,7 +98,7 @@ title: InMoDe Portal
     </section>
 
     <section class="section socials">
-        <h2>Social Media</h2>
+        <h2>Socials</h2>
         <ul class="social-list">
             {% for social in socials %}
                 <li class="social-item">
@@ -31,28 +109,9 @@ title: InMoDe Portal
         </ul>
     </section>
 
-    <section class="section study-fields">
-        <h2>Fields of Study</h2>
-        <ul class="study-field-list">
-            {% for studyField in studyFields %}
-                <li class="study-field-item">{{studyField.name}}</li>
-            {% endfor %}
-        </ul>
-    </section>
+    
 
-    <section class="section projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            {% for project in projects %}
-                <div class="project-item">
-                    <h3>{{project.name}}</h3>
-                    <p>{{project.description}}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-
-    <section class="section papers">
+    <!-- <section class="section papers">
         <h2>Research Papers</h2>
         <ul class="paper-list">
             {% for paper in papers %}
@@ -61,5 +120,6 @@ title: InMoDe Portal
                 </li>
             {% endfor %}
         </ul>
-    </section>
+    </section> -->
+    
 </div>

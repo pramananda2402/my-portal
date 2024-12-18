@@ -13,7 +13,10 @@ title: "Study Fields"
 
         <a href="{{ studyField.url }}" class="study-field-link">
             <h2>{{ studyField.data.title }}</h2>
-            <p>{{ studyField.data.description }}</p>
+            <p>{{ studyField.data.github }}</p>
+        </a>
+        <a href="{{ studyField.data.github }}" target="_blank">
+            github
         </a>
     </li>
     {% endfor %}

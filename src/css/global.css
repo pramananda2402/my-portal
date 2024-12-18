@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: full;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+    color: #222; /* Dark text */
+}

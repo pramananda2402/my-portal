@@ -1,14 +1,10 @@
 [
     {
-        "name": "project 1",
-        "description": "project 1 description"
+        "name": "Code Game Engine",
+        "description": "a simple web based game enginee that give abstraction of simple function to manupulate game result"
     },
     {
-        "name": "project 2",
-        "description": "project 2 description"
-    },
-    {
-        "name": "project 3",
-        "description": "project 3 description"
+        "name": "My personal website",
+        "description": "reserved my resource and built my profile on my website"
     }
 ]

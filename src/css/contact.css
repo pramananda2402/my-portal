@@ -1,94 +1,80 @@
-html{
-    background: Slateblue;
-    box-sizing:border-box;
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: full;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light background */
+  color: #222; /* Dark text */
 }
-*{
-  box-sizing:inherit;
+
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-body{
-  background: white;
-  width:90%;
-  max-width: 800px;
-  margin:50px auto;
-  font-family: Calibri, Arial, sans-serif;
-  padding:20px;
-}
-h1, p{
+
+h1 {
   text-align: center;
-}
-label{
-  display:block;
-  margin:1em 0 .2em;
-}
-/* single-line text, checkbox, and button */
-input, select, textarea{
-  display:block;
-  width:100%;
-  padding:.3em;
-  font-size:20px;
-  background-color:#fbfbfb;
-  border:solid 1px #CCC;
-  resize:vertical;
-}
-textarea{
-  min-height:180px;
-}
-select{
-  color:indigo;
-}
-option{
-  color:blue;
-  background: lavenderBlush;
-}
-input[type=checkbox]{
-  display:inline;
-  width:auto;
-  color:red;
+  color: #333;
 }
 
-input[type=submit]{
-  background:lightcoral;
-  margin:1em 0 0;
-  color:white;
-  border:none;
-  border-radius:8px;
-  transition:all .3s ease-out;
+.form-group {
+  margin-bottom: 15px;
 }
 
-input:focus,
-input:hover,
-select:focus,
-select:hover,
-textarea:focus,
-textarea:hover{
-  background: lavenderBlush;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-/* hover and focus states */
-input[type=submit]:hover,
-input[type=submit]:focus{
-  background: lightgreen;
-  outline:none;
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-@media screen and (min-width:600px) {
-  /*  make the form 2 columns */
-  form:after{
-    content:'';
-    display:block;
-    clear:both;
-  }
-  .column{
-    width:50%;
-    padding:1em;
-    float:left;
-  }
+.form-group textarea {
+  resize: none;
+  height: 100px;
 }
 
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+.submit-button:hover {
+  background-color: #0056b3;
+}
 
+.response-message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
 
+.response-message.success {
+  color: green;
+}
 
-
-
-
+.response-message.error {
+  color: red;
+}

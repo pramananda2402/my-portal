@@ -1,27 +1,38 @@
 [
     {
         "name": "Github",
-        "link": "https://github.com/InMoDe-Portal"
+        "username": "pramananda2402",
+        "link": "https://github.com/pramananda2402"
     },
     {
         "name": "Linkedin",
-        "link": "https://www.linkedin.com/company/InMoDe-Portal/"
+        "username": "pramananda sarkar",
+        "link": "https://www.linkedin.com/in/pramananda-sarkar-32465b321/"
     },
     {
         "name": "Email",
-        "link": "mailto:incmordev6794@gmail.com"    
+        "username": "pramananda sarkar",
+        "link": "mailto:pramananda2402@gmail.com"    
     },
     {
         "name": "personal website",
+        "username": "pramananda sarkar",
         "link": "https://incmordev6794.github.io/"
     },
     {
         "name": "leetcode",
-        "link": "https://leetcode.com/InMoDe-Portal/"
+        "username": "pramananda2402",
+        "link": "https://leetcode.com/u/pramananda2402/"
     },
     {
         "name": "codeforces",
         "link": "https://codeforces.com/profile/InMoDe-Portal"        
+    },
+    {
+        "name": "hackerrank",
+        "username": "pramananda sarkar",
+        "link": "https://www.hackerrank.com/profile/pramananda2402"
+
     }
 
 

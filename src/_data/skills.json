@@ -1,0 +1,55 @@
+{
+    "main_language": [
+        {
+            "name": "C and C++",
+            "level": "Intermediate"
+        },
+        {
+            "name": "Java",
+            "level": "comfortable"
+        },
+        {
+            "name": "Python",
+            "level": "mostly comfortable"
+        },
+        {
+            "name": "JavaScript",
+            "level": "Intermediate"
+        }
+    ],
+    "other_languages": ["HTML", "CSS", "SQL", "BashScript"],
+    "frameworks": {
+        "web_frameworks": [
+            { "name": "Next.js" },
+            { "name": "Node.js Express.js" },
+            { "name": "Django" }
+        ],
+        "ML_DL_frameworks": [
+            { "name": "PyTorch" },
+            { "name": "TensorFlow" }
+        ]
+    },
+    "Libraries": {
+        "web_libraries": [
+            { "name": "React.js" },
+            { "name": "Bootstrap" },
+            { "name": "Tailwind CSS" },
+            { "name": "Material UI" }
+        ],
+        "ML_DL_libraries": [
+            { "name": "Numpy" },
+            { "name": "Pandas" },
+            { "name": "Matplotlib" }
+        ]
+    },
+    "other": [
+        {
+            "name": "Git",
+            "des": "comfortable to use git in daily life version control."
+        },
+        {
+            "name": "Linux",
+            "des": "Using Arch Linux to control my machine in daily life."
+        }
+    ]
+}

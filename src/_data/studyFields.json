@@ -1,11 +1,18 @@
 [
     {
-        "name": "Web Development"
+        "name": "Software Development",
+        "des": "Learning how to develop large scale module and maintain it over time"
     },
     {
-        "name": "Machine Learning"
+        "name": "Web Development",
+        "des": "getring familier with modern web development tools and frameworks"
     },
     {
-        "name": "Data Science"
+        "name": "Machine Learning",
+        "des": "Learning basic concepts of machine learning and algorithms to solve real world problems"
+    },
+    {
+        "name": "Deep Learning",
+        "des": "Starting deep learning to solve complex problems"
     }
 ]

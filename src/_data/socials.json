@@ -1,33 +1,28 @@
 [
     {
         "name": "Email",
-        "username": "incmordev6794@gmail.com",
-        "link": "mailto:incmordev6794@gmail.com"
-    },
-    {
-        "name": "Github",
-        "username": "InMoDe-Portal",
-        "link": "https://github.com/InMoDe-Portal"
+        "username": "pramananda2402@gmail.com",
+        "link": "mailto:pramananda2402@gmail.com"
     },
     {
         "name": "Linkedin",
-        "username": "InMoDe-Portal",
-        "link": "https://www.linkedin.com/company/InMoDe-Portal/"
+        "username": "pramananda-sarkar-32465b321",
+        "link": "https://www.linkedin.com/in/pramananda-sarkar-32465b321/"
+    },
+    {
+        "name": "personal website",
+        "username": "pramananda sarkar",
+        "link": "https://incmordev6794.github.io/"
     },
     {
         "name": "X",
-        "username": "InMoDe-Portal",
-        "link": "https://twitter.com/InMoDePortal"
-    },
-    {
-        "name": "telegram",
-        "username": "InMoDe-Portal",
-        "link": "https://t.me/InMoDePortal"
+        "username": "x.com/pramananda2403",
+        "link": "https://x.com/pramananda2403"
     },
     {
         "name": "facebook",
-        "username": "InMoDe-Portal",
-        "link": "https://www.facebook.com/InMoDePortal"
+        "username": "facebook.com/profile.php?id=61566943738341",
+        "link": "https://www.facebook.com/profile.php?id=61566943738341"
     }
 
 ]

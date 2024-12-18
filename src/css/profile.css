@@ -1,11 +1,11 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f4f4; /* Light background */
+    color: #222; /* Dark text */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -15,32 +15,85 @@ body {
     padding: 20px;
 }
 
-/* Header */
-.header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 8px;
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2rem;
+.section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
+
+.study-field-list, .project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.study-field-item, .project-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.study-field-item h3, .project-item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #0056b3;
+}
+
+.study-field-item ul, .project-item p {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.study-field-item ul li, .project-item p {
+    margin-bottom: 5px;
+}
+
+.study-field-item ul li:last-child, .project-item p:last-child {
+    margin-bottom: 0;
+}
+
+.project-item {
+    transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Sections */
 .section {
     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* White section background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
     font-size: 1.5rem;
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
+    color: #222; /* Dark text for section headers */
+    border-bottom: 2px solid #222;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
+
+
 
 /* Lists */
 ul {
@@ -53,32 +106,38 @@ li {
     margin: 10px 0;
 }
 
-/* Platforms */
+/* Platform Links */
 .platform-list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .platform-item a {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f4f4f4; /* Light background for buttons */
+    color: #222; /* Dark text */
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .platform-item a:hover {
-    background-color: #45a049;
+    background-color: #e3f2fd; /* Light blue hover effect */
+    color: #0d47a1; /* Blue text on hover */
+    transform: scale(1.05);
 }
 
 /* Social Media */
 .social-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     gap: 15px;
+    justify-content: center;
 }
 
 .social-item span {
@@ -87,13 +146,13 @@ li {
 }
 
 .social-item a {
-    color: #4CAF50;
+    color: #1565c0;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .social-item a:hover {
-    color: #388e3c;
+    color: #0d47a1; /* Darker blue on hover */
 }
 
 /* Study Fields */
@@ -115,7 +174,7 @@ li {
 
 .project-item {
     padding: 15px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: box-shadow 0.3s;
@@ -127,7 +186,7 @@ li {
 
 .project-item h3 {
     margin-top: 0;
-    color: #4CAF50;
+    color: #222;
 }
 
 /* Papers */
@@ -139,7 +198,7 @@ li {
 .paper-item h3 {
     margin: 5px 0;
     font-size: 1.2rem;
-    color: #333;
+    color: #222;
 }
 
 /* Responsive Design */
@@ -149,4 +208,14 @@ li {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4; /* Light footer background */
+    color: #555; /* Subtle footer text */
+    margin-top: 30px;
+    border-top: 2px solid #ddd;
 }
